@@ -8,7 +8,7 @@ const GeminiAdvisor: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', text: 'Здраво! Ја сам ваш гастрономски саветник. Како могу да вам помогнем да комбинујете наш сјенички сир?' }
+    { role: 'model', text: 'Здраво! Ја сам ваш Јелић Виртуелни Асистент. Како могу да вам помогнем да комбинујете наш сјенички сир?' }
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -88,7 +88,7 @@ const GeminiAdvisor: React.FC = () => {
             {/* Header */}
             <div className="bg-earth text-paper p-4 flex justify-between items-center">
               <div>
-                <h3 className="font-serif font-bold text-lg">Гастро Саветник</h3>
+                <h3 className="font-serif font-bold text-lg">Јелић Виртуелни Асистент</h3>
                 <p className="text-xs opacity-80">Уз помоћ Google Gemini AI</p>
               </div>
               <button onClick={() => setIsOpen(false)} className="text-paper hover:text-clay transition-colors">
